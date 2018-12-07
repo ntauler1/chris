@@ -13,7 +13,7 @@ SECRET_KEY = ')o-g4bbm7sh%e$jjrn*$v1f)m^-2l8ok!m+(0@2-^+&1s0*dwz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cartfinal.herokuapp.com']
 
 SEND_GRID_API_KEY = ''
 EMAIL_HOST = 'smtp.sendgrid.net'
