@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Cart</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" href="/static/css/style.css" type="text/css">
 
-    {% block head %}{% endblock head %}
-    {% block style %}{% endblock style %}
-    
-</head>
+<div id="page" class="site">
+
+<header id="masthead" class="site-header" role="banner">
+
+		<!-- #main-menu -->
+		<nav class="main-navigation" id="main-nav">
+
+		<div id="primary-menu" class="nav-menu menu"><ul aria-expanded="false" class=" nav-menu">
+            <li class="page_item page-item-4"><a href="dresses.html">Dresses</a></li>
+            <li class="page_item page-item-4"><a href="bottoms.html">Bottom</a></li>
+            <li class="page_item page-item-4"><a href="tops.html">Tops</a></li>
+            <li class="page_item page-item-4"><a href="accessories.html">Accessories</a></li>
+            <li class="page_item page-item-4"><a href="sale.html">Sale</a></li>
+
+
+</ul>
+             <a href="/cart/order-summary" style="margin-left:1000px;margin-top:-30px;"/>
+                <img src="/static/images/baseline-shopping_cart-24px.svg" style="margin-top: -37px;margin-left: 1100"/>
+           <h1 class="site-title" style="margin-right:1000px; margin-top: -42px;">
+					<a href="home.html" rel="home" style="font-size:30px">
+						KVet Co.
+
+					</a>
+				</h1>
+            </div>
+
+
+		</nav>
+
 <body>
     {% include 'messages.html' %}
     <div class="container">
@@ -21,4 +42,19 @@
 
     {% block script %}{% endblock script %}
 </body>
+
+    	<footer id="colophon" class="site-footer container" role="contentinfo">
+
+		<div id="footer-social">
+
+		</div>
+
+		<div class="site-info container">
+			© 2018
+			<a href="http://kvetco.com/">Nicole Tauler</a>
+		</div><!-- .site-info -->
+
+	</footer><!-- #colophon -->
+</div>
+
 </html>
