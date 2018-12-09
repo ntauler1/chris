@@ -145,12 +145,12 @@ MEDIA_ROOT = os.path.join(VENV_PATH, 'media_root')
 
 if DEBUG:
     # test keys
-    STRIPE_PUBLISHABLE_KEY = ''
-    STRIPE_SECRET_KEY = ''
+    STRIPE_PUBLISHABLE_KEY = 'pk_test_BxQ1adBQX87PdmxzqnFkigGC'
+    STRIPE_SECRET_KEY = 'sk_test_a0YjBM3rhjx5SFTq44YX0uwg'
     BT_ENVIRONMENT='sandbox'
-    BT_MERCHANT_ID='4822'
-    BT_PUBLIC_KEY='111'
-    BT_PRIVATE_KEY='222'
+    BT_MERCHANT_ID='cc4sssb738bs4h8p'
+    BT_PUBLIC_KEY='pxs54vxkv55wx9dh'
+    BT_PRIVATE_KEY='57572ca80dd47927465e065d61f0614c'
 else:
     # live keys
     STRIPE_PUBLISHABLE_KEY = 'YOUR STRIPE LIVE PUB KEY'
