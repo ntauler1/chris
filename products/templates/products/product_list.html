@@ -1,10 +1,55 @@
 {% extends 'base.html' %}
 
 {% block content %}
+ <div class="site-branding container" >
+
+				<h1 class="site-title">
+					<a href="http://nicoletauler.com/" rel="home">
+						Holiday 2018
+
+					</a>
+				</h1>
+
+										<p class="site-description">
+							Dress Collection
+
+						</p>
+
+
+		</div><!-- .site-branding -->
+
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area container">
+
+
+
     {{ message }}
-    <div class="row">
+
+
+    <table class="row">
+       <tr>
+           <td>
+           <img src="https://cdn.tobi.com/product_images/md/1/silver-so-long-side-slit-maxi-dress.jpg" alt="Silver Maxi" width="75"/>
+
+           </td>
+           <td>
+            <img src="https://cdn.tobi.com/product_images/md/1/black-date-night-pleated-dress.jpg" alt="Black Skater" width="75"/>
+           </td>
+           <td>
+           <img src="https://cdn.tobi.com/product_images/md/1/red-frances-low-back-mini-bodycon-dress.jpg" alt="Red Bodycon" width="75"/>
+           </td>
+           <td>
+           <img src="https://cdn.tobi.com/product_images/md/1/gold-lucille-sequin-bodycon-dress.jpg" alt="Gold Sequin" width="75"/>
+           </td>
+
+       </tr>
+
+
+
     {% for object in object_list %}
-        <div class="col-sm-3">
+        <td class="col-sm-3">
             <p>{{ object.name }}</p>
             <p>Price: ${{ object.price }}</p>
             {% if object in user.profile.ebooks.all %}
@@ -15,7 +60,9 @@
             {% else %}
             <a href="{% url 'shopping_cart:add_to_cart' object.id %}" class="btn btn-warning">Add to Cart</a>
             {% endif %}
-        </div>
+        </td>
+
+
     {% endfor %}
-    </div>
+    </table>
 {% endblock content %}
