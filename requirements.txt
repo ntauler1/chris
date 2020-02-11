@@ -4,7 +4,7 @@ chardet==3.0.4
 Click==7.0
 codegen==1.0
 defusedxml==0.5.0
-Django==2.0.6
+Django==2.2.10
 django-allauth==0.36.0
 gunicorn==19.9.0
 Flask==1.0.2
