@@ -23,7 +23,7 @@ requests==2.19.0
 requests-oauthlib==1.0.0
 reverse==0.1.0
 stripe==1.82.1
-urllib3==1.23
+urllib3==1.26.5
 virtualenv==16.0.0
 virtualenvwrapper-win==1.2.5
 Werkzeug==0.14.1
